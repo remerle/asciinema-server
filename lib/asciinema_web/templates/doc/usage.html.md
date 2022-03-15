@@ -21,7 +21,7 @@ the process exits.
 If the `filename` argument is omitted then (after asking for confirmation) the
 resulting asciicast is uploaded to
 [asciinema-server](https://github.com/asciinema/asciinema-server) (by default to
-asciinema.org), where it can be watched and shared.
+ascii.emerle.dev), where it can be watched and shared.
 
 If the `filename` argument is given then the resulting recording (called
 [asciicast](https://github.com/asciinema/asciinema/blob/master/doc/asciicast-v2.md))
@@ -73,13 +73,13 @@ Playing from a local file:
 
 Playing from HTTP(S) URL:
 
-    asciinema play https://asciinema.org/a/22124.cast
+    asciinema play https://ascii.emerle.dev/a/22124.cast
     asciinema play http://example.com/demo.cast
 
 Playing from asciicast page URL (requires `<link rel="alternate"
 type="application/x-asciicast" href="/my/ascii.cast">` in page's HTML):
 
-    asciinema play https://asciinema.org/a/22124
+    asciinema play https://ascii.emerle.dev/a/22124
     asciinema play http://example.com/blog/post.html
 
 Playing from stdin:
@@ -113,21 +113,21 @@ output (including all escape sequences) to a terminal immediately.
 
 ## `upload <filename>`
 
-__Upload recorded asciicast to asciinema.org site.__
+__Upload recorded asciicast to ascii.emerle.dev site.__
 
 This command uploads given asciicast (recorded by `rec` command) to
-asciinema.org, where it can be watched and shared.
+ascii.emerle.dev, where it can be watched and shared.
 
 `asciinema rec demo.cast` + `asciinema play demo.cast` + `asciinema upload
 demo.cast` is a nice combo if you want to review an asciicast before
-publishing it on asciinema.org.
+publishing it on ascii.emerle.dev.
 
 ## `auth`
 
-__Link your install ID with your asciinema.org user account.__
+__Link your install ID with your ascii.emerle.dev user account.__
 
 If you want to manage your recordings (change title/theme, delete) at
-asciinema.org you need to link your "install ID" with asciinema.org user
+ascii.emerle.dev you need to link your "install ID" with ascii.emerle.dev user
 account.
 
 This command displays the URL to open in a web browser to do that. You may be
@@ -137,12 +137,12 @@ Install ID is a random ID ([UUID
 v4](https://en.wikipedia.org/wiki/Universally_unique_identifier)) generated
 locally when you run asciinema for the first time, and saved at
 `$HOME/.config/asciinema/install-id`. It's purpose is to connect local machine
-with uploaded recordings, so they can later be associated with asciinema.org
+with uploaded recordings, so they can later be associated with ascii.emerle.dev
 account. This way we decouple uploading from account creation, allowing them to
 happen in any order.
 
 > A new install ID is generated on each machine and system user account you use
-> asciinema on, so in order to keep all recordings under a single asciinema.org
+> asciinema on, so in order to keep all recordings under a single ascii.emerle.dev
 > account you need to run `asciinema auth` on all of those machines.
 
 > asciinema versions prior to 2.0 confusingly referred to install ID as "API

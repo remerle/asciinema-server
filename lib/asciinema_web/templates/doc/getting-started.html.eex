@@ -25,7 +25,7 @@
 <h2>3. Manage your recordings (optional)</h2>
 
 <p>
-  If you want to manage your recordings on asciinema.org (set title/description,
+  If you want to manage your recordings on ascii.emerle.dev (set title/description,
   delete etc) you need to authenticate. Run the following command and open
   displayed URL in your web browser:
 </p>

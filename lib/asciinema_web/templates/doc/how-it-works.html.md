@@ -3,13 +3,13 @@
 asciinema project is built of several complementary pieces:
 
 * command-line based terminal session recorder, `asciinema`,
-* website with an API at asciinema.org,
+* website with an API at ascii.emerle.dev,
 * javascript player
 
 When you run `asciinema rec` in your terminal the recording starts, capturing
 all output that is being printed to your terminal while you're issuing the
 shell commands. When the recording finishes (by hitting <kbd>Ctrl-D</kbd> or
-typing `exit`) then the captured output is uploaded to asciinema.org website
+typing `exit`) then the captured output is uploaded to ascii.emerle.dev website
 and prepared for playback on the web.
 
 Here's a brief overview of how these parts work.
@@ -45,7 +45,7 @@ information). The captured output includes all the text and invisible
 escape/control sequences in a raw, unaltered form. When the recording session
 finishes it uploads the output (in
 [asciicast format](https://github.com/asciinema/asciinema/blob/master/doc/asciicast-v1.md))
-to asciinema.org. That's all about "recording" part.
+to ascii.emerle.dev. That's all about "recording" part.
 
 For the implementation details check out [recorder source
 code](https://github.com/asciinema/asciinema).
@@ -69,6 +69,6 @@ terminal emulators like xterm, Gnome Terminal, iTerm, mosh etc.
 The end result is a smooth animation with all text attributes (bold,
 underline, inverse, ...) and 256 colors perfectly rendered.
 
-For the implementation details check out [asciinema.org website source
+For the implementation details check out [ascii.emerle.dev website source
 code](https://github.com/asciinema/asciinema-server) and [player source
 code](https://github.com/asciinema/asciinema-player).

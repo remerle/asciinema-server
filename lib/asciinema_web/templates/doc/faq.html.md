@@ -57,7 +57,7 @@ Yes, see [embedding docs](/docs/embedding).
 ## How can I delete my asciicast?
 
 In order to delete your asciicast you need to associate your local API token
-(which was assigned to the recorded asciicast) with the asciinema.org
+(which was assigned to the recorded asciicast) with the ascii.emerle.dev
 account. Just run `asciinema auth` in your terminal and open the printed URL
 in your browser.  Once you sign in you'll see a "Delete" link on your
 asciicast's page.
